@@ -1,0 +1,1 @@
+My agent forgot yesterday's architecture decisions and rebuilt the service from scratch; it is now the most senior engineer on the team.

@@ -1,0 +1,12 @@
+{
+  "name": "makefun-quiet-tandem-joke",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "One-line joke about working beside AI coding agents, written by a program to /output/entry.txt.",
+  "license": "MIT",
+  "scripts": {
+    "start": "node main.ts",
+    "check": "node main.ts && node --input-type=module -e \"import{readFileSync}from'node:fs';const t=readFileSync('out/entry.txt','utf8');const n=[...t].length;if(!t.trim()||n<1||n>280)throw new Error('gate: '+n+' code points');console.log('gate ok:',n,'code points,'+Buffer.byteLength(t),'bytes')\""
+  }
+}
